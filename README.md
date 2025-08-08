@@ -1,5 +1,7 @@
 Dairy Farm Management System
 This project is a comprehensive Dairy Farm Management System developed as part of a Database Management Systems (DBMS) academic project. It aims to streamline dairy farm operations by efficiently managing user data, cattle, milk production, vaccination tracking, sales, and more using a relational database model.
+
+
 📌 Features
 •	👥 User management (Farmers, Cow Buyers, etc.)
 •	🐮 Cattle registration and categorization
@@ -9,10 +11,14 @@ This project is a comprehensive Dairy Farm Management System developed as part o
 •	🌾 Feed monitoring for each cow
 •	🧾 ER Diagram, Relational Schema & Normalization up to 3NF
 •	🧠 SQL queries for reporting, filtering, and data manipulation
+
+
 🧱 Tech Stack
 Database: PostgreSQL / MySQL
 Design: ER Diagrams, Relational Schema, Normalization (1NF → 3NF)
 Language: SQL
+
+
 🗃️ ER Diagram & Schema
 Detailed schema includes:
 •	User(User_Id , User_Name, User_Category, Street_No, House_No, Pin)
@@ -23,10 +29,14 @@ Detailed schema includes:
 •	Vaccination(Vaccine_Id, Cow_Id, Date_Recorded)
 •	Milk_Collection(Milk_Collection_Id, Date_Recorded, Total_Lit)
 •	Produce_Milk_Collection(Cow_Id, Milk_Collection_Id, Date_Recorded, Total_Lit)
+
+
 Normalization includes:
 • 1NF: Eliminated repeating groups
 • 2NF: Removed partial dependencies
 • 3NF: Removed transitive dependencies
+
+
 📊 Sample SQL Queries
 SELECT * FROM Cow_Sales WHERE Cow_Sale_Amount > 15000;
 SELECT User_Id, User_Name FROM UserInfo WHERE User_Id IN (101,102);
